@@ -1,0 +1,14 @@
+<h3>Update your Clothing Info</h3>
+
+<form action="/products/<%= @product.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    Item:<input type="text" name="item" placeholder="<%= @product.item%>">
+    Price:<input type="number" name="price" placeholder="<%= @product.price%>">
+    Brand:<input type="text" name="brand" placeholder="<%= @product.brand%>">
+    <input type="submit" value="Update">
+</form>
+
+<form action="/products/<%= @product.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete Clothing">
+</form>

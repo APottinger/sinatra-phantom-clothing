@@ -1,0 +1,35 @@
+Key notes:
+
+utilize seeds file (will take pic)
+has_secure_password from the gem 'bcrypt' gives me the password_digest and authenticate in which i can authenticate the encrypted password.
+
+mounting a dynamic relationship with foreign key to create dynamic relationships between models
+
+*helpers do***************
+
+current_user
+    User.find_by
+
+logged_in?
+    !!current_user
+
+    authenticate        IT HELPS TO ALWAYS STACK YOUR HELPERS
+        if !logged_in?
+            redirect ''
+
+authorize(product)
+    authenticate
+    if product.user != current_user 
+        redirect ''
+
+TODAY
+-questions for Micah
+    quitting the sessions 
+
+
+-Tasks
+    creating "back" button
+    (Swith to new slack channel)
+
+
+Validations in User Model

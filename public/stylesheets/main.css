@@ -1,0 +1,37 @@
+
+  body {
+    background-color: rgb(243, 247, 228);
+    color: #333;
+    font-family: Sans-Serif;
+    line-height: 18px;
+  }
+
+  form {
+    display:inline;
+  }
+
+  h1 {
+    text-align: center;
+    position: center;
+    font-size: 36px;
+    font-family: verdana;
+    line-height: 54px;
+    color: red
+  }
+
+  p {
+    font-style: italic;
+    color: sandybrown;
+    font-size: 20px;
+    position: absolute;
+    top: 40px; left: 40px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+}

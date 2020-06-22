@@ -1,0 +1,7 @@
+<h1>My Clothing</h1>
+
+<ol><% @products.each do |p| %>
+  <li><a href="/products/<%= p.id%>">Item</a>: <%= p.item %></li>
+<%end%>
+</ol>
+

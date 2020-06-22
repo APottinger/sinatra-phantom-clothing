@@ -1,0 +1,19 @@
+<style>
+   p {
+      color: gray
+   }
+</style>
+
+<h1>Sign Up for Phantom Clothing</h1>
+<p>Create a username and password below:</p>
+<% if @user && @user.errors.any? %>
+    <% @user.errors.full_messages.each do |m|%>
+        <p><%= m %></p>
+    <%end%>
+<%end%>
+
+<form action="/signup" method= "POST">
+    <input type="text" name = "username" placeholder="username">
+    <input type="password" name = "password" placeholder="password">
+    <input type="submit">
+</form>
