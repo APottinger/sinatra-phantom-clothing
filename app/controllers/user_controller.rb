@@ -21,10 +21,11 @@ class UserController < ApplicationController
     end
     #include functionality that checks if logged in/not to bolster user functionality
     post '/login' do
-        user = User.find_by(username: params[:username])
-        if user
-            session[:user_id] = user.id
-            redirect "users/#{user.id}"
+        @user = User.find_by(username: params[:username])
+        if @user
+            session[:user_id] = @user.id
+            binding.pry
+            redirect "users/#{@user.id}"
         else
             @err = "Invalid Credentials"
             erb :'users/login'
